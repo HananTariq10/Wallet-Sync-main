@@ -1,0 +1,242 @@
+/* Reset some default styles for margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a background color for the entire page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7; /* Light gray background */
+}
+
+/* Header styles */
+header {
+  background-color: #da1a0c; /* Dark red accent */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header h1 {
+  font-size: 2em;
+}
+
+/* Container for main content */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Add Transaction section */
+.input-section {
+  flex: 1;
+  padding: 20px;
+  background-color: #f9f9f9; /* Light gray background */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.input-section h2 {
+  font-size: 1.8em; /* Larger heading */
+  margin-bottom: 15px;
+  color: #333; /* Darker text color */
+}
+
+/* Transaction type radio buttons */
+.transaction-type {
+  margin-bottom: 20px; /* Increased spacing */
+}
+
+.transaction-type label {
+  margin-right: 20px; /* Increased spacing */
+  font-weight: bold;
+  font-size: 1.1em; /* Larger font size */
+}
+
+/* Transaction details inputs */
+.transaction-details label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px; /* Reduced spacing */
+  font-size: 1.1em; /* Larger font size */
+}
+
+/* Style the select input */
+#category-select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em; /* Slightly larger font size */
+}
+
+/* Style the amount input */
+#amount-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em; /* Slightly larger font size */
+}
+
+/* Style the date input */
+#date-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em; /* Slightly larger font size */
+}
+
+/* Add button */
+#add-btn {
+  padding: 12px 24px; /* Larger button */
+  background-color: #007bff; /* Blue accent */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1.1em; /* Larger font size */
+}
+
+#add-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* ... (previous CSS code) ... */
+
+/* Transactions section */
+.transactions-section {
+  flex: 2;
+  padding: 20px;
+  margin-left: 20px;
+  background-color: #ffffff; /* White background */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.transactions-section h2 {
+  font-size: 1.8em; /* Larger heading */
+  margin-bottom: 15px;
+  color: #333; /* Darker text color */
+}
+
+/* Table styles */
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 8px; /* Decreased padding for thinner rows */
+  text-align: center;
+  font-size: 1.1em; /* Larger font size */
+}
+
+table th {
+  background-color: #da1a0c; /* Dark red accent */
+  color: white;
+}
+
+/* Add background color based on transaction type */
+table tr[type="Deposit"] {
+  background-color: #c8e6c9; /* Light green for Deposit */
+}
+
+table tr[type="Expense"] {
+  background-color: #ffcdd2; /* Light red for Expense */
+}
+
+/* Delete button styles */
+.delete-btn {
+  padding: 6px 12px; /* Decreased padding for smaller buttons */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8em; /* Larger font size */
+}
+
+/* Delete button colors based on transaction type */
+.delete-btn-deposit {
+  background-color: #da1a0c; /* Dark red for Deposit */
+  color: white;
+}
+
+.delete-btn-expense {
+  background-color: #4caf50; /* Green for Expense */
+  color: white;
+}
+
+/* Hover effect for delete button */
+.delete-btn:hover {
+  background-color: #a80b07; /* Darker red on hover */
+}
+
+/* Footer styles */
+.footer {
+  bottom: 0;
+  width: 100%;
+  background-color: #da1a0c; /* Dark red accent */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  border-radius: 0 0 10px 10px;
+}
+
+/* Copyright styles */
+.copyright {
+  font-weight: bold;
+  font-size: 1.1em; /* Larger font size */
+}
+
+.copyright span {
+  font-size: 1.3em; /* Larger font size */
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+/* Totals section styles */
+.totals {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.totals-card {
+  background-color: #f9f9f9; /* Light gray background */
+  padding: 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-radius: 10px;
+  flex: 1; /* Equal width for both cards */
+}
+
+.totals-card h2 {
+  font-size: 1.8em; /* Larger heading */
+  margin-bottom: 10px;
+  color: #333; /* Darker text color */
+}
+
+/* Style the total amount display */
+#total-expenses,
+#total-deposit {
+  font-size: 1.5em; /* Larger font size */
+  font-weight: bold;
+  color: #333; /* Darker text color */
+}

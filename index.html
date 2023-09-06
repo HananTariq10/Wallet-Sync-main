@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Wallet Sync</title>
+</head>
+<body>
+    <header>
+        <h1>WALLET SYNC</h1>
+    </header>
+    <main>
+        <div class="container">
+            <section class="input-section">
+                <h2>Add Transaction</h2>
+                <div class="transaction-type">
+                    <label for="expense-radio">Expense</label>
+                    <input type="radio" name="transaction-type" value="Expense" id="expense-radio" checked>
+                    <label for="deposit-radio">Deposit</label>
+                    <input type="radio" name="transaction-type" value="Deposit" id="deposit-radio">
+                </div>
+                <div class="transaction-details">
+                    <label for="category-select">Category:</label>
+                    <select id="category-select">
+                        <option value="Food & Beverage">Food & Beverage</option>
+                        <option value="Rent">Rent</option>
+                        <option value="Transport">Transport</option>
+                        <option value="Relaxing">Relaxing</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <label for="amount-input">Amount:</label>
+                    <input type="number" id="amount-input">
+                    <label for="date-input">Date:</label>
+                    <input type="date" id="date-input">
+                </div>
+                <button id="add-btn">Add</button>
+            </section>
+            <section class="transactions-section">
+                <h2>Transaction History</h2>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Type</th>
+                                <th>Category</th>
+                                <th>Amount</th>
+                                <th>Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody id="transactions-table-body"></tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="4" style="text-align: right;"><strong>Total:</strong></td>
+                                <td id="total-amount"></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </section>
+        </div>
+        <section class="totals">
+            <div class="totals-card">
+                <h2>Total Expenses</h2>
+                <span id="total-expenses"></span>
+            </div>
+            <div class="totals-card">
+                <h2>Total Deposit</h2>
+                <span id="total-deposit"></span>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="copyright">
+            <span>&#169;</span>
+            <span>Hanan Tariq. All rights reserved.</span>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
